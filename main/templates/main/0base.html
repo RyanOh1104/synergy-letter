@@ -1,0 +1,51 @@
+{% load static %}
+{% static 'images' as baseUrl %}
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    {% block css %}
+    {% endblock %}
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+        <a href="/home" class='navbar-brand'>
+            <span>🦄</span>
+        </a>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-9">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div> 
+    </div>
+
+<div class="block-spacing"></div>
+
+<div class="row">
+    <div class="col col-12">
+        <a class="goodog text-center" href="http://bit.ly/synergyletter"><p class="goodog-text">😱?? 아직도 <strong>구독</strong>을 안 했어요?!📫</p></a>
+    </div>
+</div>
+
+<br>
+
+
+<!-- 
+    <footer class="fixed-bottom">
+        <div class="row justify-content-center footer">
+            This is where the footer comes
+        </div>
+    </footer> -->
+
+</body>
+</html>

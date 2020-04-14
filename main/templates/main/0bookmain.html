@@ -1,0 +1,52 @@
+{% extends 'main/0base.html' %}
+
+{% load index %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'style_bookmain.css' %}">
+{% endblock %}
+
+{% block title %}{{key.title}}{% endblock %}
+
+{% block content %}
+<div class="block-spacing"></div>
+
+<div class="row block-book">
+    <div class="col col-3 text-center">
+        <img class="book-cover" src="{{key.cover.url}}">
+    </div>
+    <div class="col col-9 for-col-center">
+        <div class="row">
+            <div class="col col-12">
+                <div class="row">
+                    <p class="book-title">{{key.title}}</p>
+                </div>
+                <div class="row book-info">
+                    저자 : {{key.author}}
+                </div>
+                <div class="row book-info">
+                    출판사 : {{key.publisher}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block-spacing"></div>
+
+{% with ''|center:key.letters as range %}
+{% for i in range %}
+<a class="article-block" href="/letter/{{key.title}}/{{forloop.counter}}">
+    <div class="row each-letter shadow-sharp">
+            <div class="col col-2 text-center"><h1>{{forloop.counter}}</h1></div>
+            <div class="col-10 for-col-center">
+                    <h5>{{letter|index:forloop.counter0}}</h5>
+            </div>
+    </div>
+</a>
+<br>
+{% endfor %}
+{% endwith %}
+
+{% endblock %}

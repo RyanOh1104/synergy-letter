@@ -1,0 +1,65 @@
+{% extends 'main/0base.html' %}
+
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'style_main.css' %}">
+{% endblock %}
+
+{% block title %}시너지 레터{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col col-7">
+        <h1 class="page-title">🖐Welcome!</h1>
+        <h3><span class="stress">좋은 책</span>과 <span class="stress">좋은 질문</span>을 떠먹여드려요.📖</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-6 phil">
+        <a class="philosophy" href="https://stibee.com/api/v1.0/emails/share/8GWl89Pcbe_B5TQoOWsYEUr5fmMrZg"><p><strong>시너지 레터</strong>의 철학이 궁금하신가요?👀</p></a>
+    </div>
+</div>
+
+
+<br>
+<!-- <div class="block-spacing"></div> -->
+
+<div class="row justify-content-center all-blocks shadow-sharp-theme-mainblock">
+    <div class="col col-12">
+        <div class="row">
+            <div class="col col-4 text-center">
+                <a href="/bookmain/1"><img class="bookcover" src="{% static 'synergy/images/무엇이되기.jpg' %}"></a>
+            </div>
+            <div class="col col-4 text-center">
+                <a href="/bookmain/2"><img class="bookcover" src="{% static 'synergy/images/결단.jpg' %}"></a>
+            </div>
+            <div class="col col-4 text-center">
+                <a href="/bookmain/3"><img class="bookcover" src="{% static 'synergy/images/트렌드인사이트.jpg' %}"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-4 text-center">
+                <a href="/bookmain/4"><img class="bookcover" src="{% static 'synergy/images/팩트풀니스.jpg' %}"></a>
+            </div>
+            <div class="col col-4 text-center">
+                <a href="/bookmain/5"><img class="bookcover" src="{% static 'synergy/images/태도에관하여.png' %}"></a>
+            </div>
+            <div class="col col-4 text-center">
+                <a href="/bookmain/6"><img class="bookcover" src="{% static 'synergy/images/인생의마지막.jpg' %}"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-4 text-center">
+                <a href="/bookmain/7"><img class="bookcover" src="{% static 'synergy/images/어떻게살것인가.jpg' %}"></a>
+            </div>
+            <!-- <div class="col col-4 text-center">
+                <a href="#"><img class="bookcover" src="{% static '' %}"></a>
+            </div>
+            <div class="col col-4 text-center">
+                <a href="#"><img class="bookcover" src="{% static '' %}"></a>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+{% endblock %}
