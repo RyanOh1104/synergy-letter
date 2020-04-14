@@ -6,5 +6,5 @@ Pillow==7.1.1
 pytz==2019.3
 sqlparse==0.3.1
 whitenoise==5.0.1
-web: gunicorn synergy-letter.wsgi --log-file -
+web: gunicorn synergy.wsgi --log-file -
 
