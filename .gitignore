@@ -140,7 +140,7 @@ cython_debug/
 *.pyc
 *~
 __pycache__
-synergy
+myvenv
 db.sqlite3
 /static
 .DS_Store
