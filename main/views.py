@@ -3,6 +3,7 @@ from .models import Book, EachLetter
 
 # Create your views here.
 def home(request):
+    
     return render(request, 'main/0home.html')
 
 def bookmain(request, id):
