@@ -142,7 +142,7 @@ cython_debug/
 __pycache__
 synergy
 db.sqlite3
-# /static
+/static
 .DS_Store
 local_settings.py
 
