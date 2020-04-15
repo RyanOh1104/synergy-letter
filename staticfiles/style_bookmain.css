@@ -1,0 +1,32 @@
+.book-cover {
+    width: 130px;
+    height: auto;
+}
+.book-title {
+    font-size: 50px;
+    font-weight: bold;
+}
+.book-info {
+    font-size: 20px;
+}
+.for-col-center {
+    display: flex;
+    align-items: center;
+}
+.block-book {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: #9300d3 solid 2px;
+    border-radius: 10px;
+}
+.each-letter {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.article-block:hover{
+    text-decoration: none !important;
+}
+.col-2 {
+    border-right: black solid 2px;
+}

@@ -1,0 +1,34 @@
+.bookcover {
+    width: 160px;
+    height: auto;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bookcover:hover {
+    box-shadow:0 5px 5px rgba(147,0, 211,0.08),
+    0 10px 10px rgba(147,0, 211,0.12),
+    0 10px 10px rgba(147,0, 211,0.16),
+    0 20px 20px rgba(147,0, 211,0.2)
+}
+.philosophy {
+    text-decoration: underline;
+    font-size: 15px;
+}
+.philosophy:visited {color:black;}
+.goodog-text {
+    color: red;
+}
+.goodog {
+    text-decoration: underline red;
+    font-size: 20px;
+}
+.goodog:visited {
+    color:red;
+    /* visibility: hidden; */
+}
+.goodog:hover {
+    text-decoration: underline red;
+}
+
