@@ -88,7 +88,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'synergyletter',
-        'USER': 'name',
+        # 'USER': 'name',
+        'USER' : 'postgres',
         'PASSWORD': 'shris9494',
         'HOST': 'localhost',
         'PORT': '',
