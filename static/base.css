@@ -38,6 +38,12 @@
     box-shadow: inset 8px 8px 8px #bbbab7, 
     inset -8px -8px 8px #ffffff;
 }
+.home-block {
+    border-radius: 10px;
+    background: #f6f5f1;
+    box-shadow:  8px 8px 6px #bbbab7, 
+    -8px -8px 6px #ffffff;
+}
 /* .all-inputs {
     background-color: #ffffff;
     box-shadow:inset 0 1px 1px rgba(147, 0, 211,0.08),
