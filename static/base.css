@@ -27,8 +27,16 @@
     padding-top: 3px;
 }
 .all-blocks {
-    background-color: #f6f5f1;
     border-radius: 10px;
+    background: #f6f5f1;
+    box-shadow:  8px 8px 6px #bbbab7, 
+    -8px -8px 6px #ffffff;
+}
+.all-blocks:hover{
+    border-radius: 10px;
+    background: #f6f5f1;
+    box-shadow: inset 8px 8px 8px #bbbab7, 
+    inset -8px -8px 8px #ffffff;
 }
 /* .all-inputs {
     background-color: #ffffff;
